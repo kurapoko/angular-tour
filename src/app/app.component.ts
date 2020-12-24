@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import MicroModal from 'micromodal';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+
+export class AppComponent implements OnInit {
   title = 'angular-tour';
 
   slidesPerView = 3;
@@ -18,4 +20,13 @@ export class AppComponent {
     {title: 'スライダー5'},
     {title: 'スライダー6'},
   ]
+
+  ngOnInit() {
+    MicroModal.init({
+      openTrigger: 'data-micromodal-open',
+      closeTrigger: 'data-micromodal-close',
+      openClass: 'is-open',
+    });
+  }
+
 }
