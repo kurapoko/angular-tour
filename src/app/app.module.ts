@@ -11,6 +11,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { SwiperComponent } from './swiper/swiper.component';
 
 import { SwiperModule } from 'swiper/angular';
+import { MicromodalComponent } from './micromodal/micromodal.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SwiperModule } from 'swiper/angular';
     HeroDetailComponent,
     MessagesComponent,
     DashboardComponent,
-    SwiperComponent
+    SwiperComponent,
+    MicromodalComponent
   ],
   imports: [
     BrowserModule,
